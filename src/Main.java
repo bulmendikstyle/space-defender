@@ -1,6 +1,10 @@
+import org.lwjgl.*;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.println("My first project!");
+        //Ғарыштық қорғаушылар
+
+        //Ойынның мақсаты:ғарыш кемесімен алдына келген жауларды атып, өз кеңістігіңді қорғау.
+
+        //Ойын ережесі:уақыт біткенше жаулардың бәрін атып сындырсақ,ұтыс табамыз.Егер бір жауды өткізіп алсақ , жеңіліс табамыз
     }
 }
