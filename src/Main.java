@@ -21,7 +21,9 @@ public class Main {
 }
 
 class SpaceshipPanel extends JPanel {
-    Spaceship spaceship = new Spaceship(50, 50);
+    private int panelWidth = 500;
+
+    Spaceship spaceship = new Spaceship(50, 50, panelWidth);
 
     public SpaceshipPanel() {
         Timer timer = new Timer(10, e -> {
@@ -41,14 +43,22 @@ class SpaceshipPanel extends JPanel {
 class Spaceship {
     private int x;
     private int y;
+    private int direction = 1;
+    private int panelWidth;
 
-    public Spaceship(int x, int y) {
+    public Spaceship(int x, int y, int panelWidth) {
         this.x = x;
         this.y = y;
+        this.panelWidth = panelWidth;
     }
 
     public void move() {
-        x += 5;
+        x += direction * 5;
+        if (x >= panelWidth - 50) {
+            direction = -1;
+        } else if (x <= 0) {
+            direction = 1;
+        }
     }
 
     public void draw(Graphics g) {
