@@ -59,9 +59,23 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Game" />
+      <module name="space-defender" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="space-defender" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpaceshipInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpaceshipInterface" />
       <module name="space-defender" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -70,6 +84,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SpaceshipInterface" />
+        <item itemvalue="Application.Game" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +100,8 @@
       <workItem from="1682133652018" duration="444000" />
       <workItem from="1682134130333" duration="2096000" />
       <workItem from="1682709121738" duration="458000" />
-      <workItem from="1682713695987" duration="3866000" />
+      <workItem from="1682713695987" duration="5784000" />
+      <workItem from="1682735193370" duration="2412000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1682133849389</created>
@@ -114,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682709562579</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық">
+      <created>1682717642674</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682717642674</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +149,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="ойынның анықтамасы" />
     <MESSAGE value="интерфейс пен ғарыш кемесі және оны х осі бойынша қозғалттық" />
-    <option name="LAST_COMMIT_MESSAGE" value="интерфейс пен ғарыш кемесі және оны х осі бойынша қозғалттық" />
+    <MESSAGE value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық" />
+    <option name="LAST_COMMIT_MESSAGE" value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық" />
   </component>
 </project>
