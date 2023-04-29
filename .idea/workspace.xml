@@ -101,7 +101,9 @@
       <workItem from="1682134130333" duration="2096000" />
       <workItem from="1682709121738" duration="458000" />
       <workItem from="1682713695987" duration="5784000" />
-      <workItem from="1682735193370" duration="2412000" />
+      <workItem from="1682735193370" duration="3348000" />
+      <workItem from="1682740589472" duration="79000" />
+      <workItem from="1682740799883" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1682133849389</created>
@@ -138,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682717642674</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық және кемені ататын еттік">
+      <created>1682739594415</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682739594415</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +159,7 @@
     <MESSAGE value="ойынның анықтамасы" />
     <MESSAGE value="интерфейс пен ғарыш кемесі және оны х осі бойынша қозғалттық" />
     <MESSAGE value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық" />
-    <option name="LAST_COMMIT_MESSAGE" value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық" />
+    <MESSAGE value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық және кемені ататын еттік" />
+    <option name="LAST_COMMIT_MESSAGE" value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық және кемені ататын еттік" />
   </component>
 </project>

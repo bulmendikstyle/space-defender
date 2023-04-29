@@ -24,6 +24,7 @@ class SpaceshipPanel extends JPanel {
     List<Bullet> bullets = new ArrayList<>();
 
     public SpaceshipPanel() {
+        setBackground(new Color(128, 0, 128));
         Timer timer = new Timer(10, e -> {
             spaceship.move();
             for (Bullet bullet : bullets) {
