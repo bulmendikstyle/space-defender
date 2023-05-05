@@ -20,7 +20,7 @@ public class Main {
 class SpaceshipPanel extends JPanel {
     private int panelWidth = 500;
 
-    Spaceship spaceship = new Spaceship(50, 50, panelWidth);
+    Spaceship spaceship = new Spaceship(400, 400, panelWidth);
     List<Bullet> bullets = new ArrayList<>();
 
     public SpaceshipPanel() {
