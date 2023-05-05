@@ -1,136 +1,33 @@
-import org.lwjgl.*;
+import java.awt.*;import java.awt.event.*;
 import javax.swing.*;
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
-
-public class Main {
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("Spaceship Interface");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 500);
-
-        SpaceshipPanel panel = new SpaceshipPanel();
-
-        frame.add(panel);
-        frame.setVisible(true);
+public class Main extends JFrame implements ActionListener {    private static final long serialVersionUID = 1L;
+    private JTextArea chatHistory;    private JTextField chatInput;
+    private JButton sendButton;    private JLabel statusLabel;
+    private String senderName;    private String receiverName;
+    public Main(String sender, String receiver) {
+        super(sender + " Chatting with " + receiver);        senderName = sender;
+        receiverName = receiver;
+        setDefaultCloseOperation(EXIT_ON_CLOSE);        setLayout(new BorderLayout());
+        JPanel chatPanel = new JPanel(new BorderLayout());
+        chatHistory = new JTextArea();        chatHistory.setEditable(false);
+        chatPanel.add(new JScrollPane(chatHistory), BorderLayout.CENTER);
+        JPanel inputPanel = new JPanel(new BorderLayout());        chatInput = new JTextField();
+        sendButton = new JButton("Send");
+        sendButton.addActionListener(this);        statusLabel = new JLabel("Online");
+        inputPanel.add(chatInput, BorderLayout.CENTER);        inputPanel.add(sendButton, BorderLayout.EAST);
+        inputPanel.add(statusLabel, BorderLayout.WEST);
+        add(chatPanel, BorderLayout.CENTER);        add(inputPanel, BorderLayout.SOUTH);
+        setSize(400, 400);
+        setLocationRelativeTo(null);        setVisible(true);
     }
-}
-
-class SpaceshipPanel extends JPanel {
-    private int panelWidth = 500;
-
-    Spaceship spaceship = new Spaceship(400, 400, panelWidth);
-    List<Bullet> bullets = new ArrayList<>();
-
-    public SpaceshipPanel() {
-        setBackground(new Color(128, 0, 128));
-        Timer timer = new Timer(10, e -> {
-            spaceship.move();
-            for (Bullet bullet : bullets) {
-                bullet.move();
-            }
-            checkCollisions();
-            repaint();
-        });
-        timer.start();
-
-        Timer shootingTimer = new Timer(500, e -> {
-            Bullet newBullet = new Bullet(spaceship.getX() + 25, spaceship.getY(), panelWidth);
-            bullets.add(newBullet);
-        });
-        shootingTimer.start();
+    public void actionPerformed(ActionEvent e) {
+        String message = chatInput.getText().trim();
+        if (message.isEmpty()) {
+            return;
+        }        String chat = senderName + " to " + receiverName + ": " + message + "\n";
+        chatHistory.append(chat);
+        chatInput.setText("");
     }
-
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        spaceship.draw(g);
-        for (Bullet bullet : bullets) {
-            bullet.draw(g);
-        }
-    }
-
-    private void checkCollisions() {
-        for (int i = 0; i < bullets.size(); i++) {
-            Bullet bullet = bullets.get(i);
-            if (spaceship.intersects(bullet)) {
-                bullets.remove(i);
-                i--;
-            }
-        }
-    }
-}
-
-class Spaceship {
-    private int x;
-    private int y;
-    private int direction = 1;
-    private int panelWidth;
-
-    public Spaceship(int x, int y, int panelWidth) {
-        this.x = x;
-        this.y = y;
-        this.panelWidth = panelWidth;
-    }
-
-    public void move() {
-        x += direction * 5;
-        if (x >= panelWidth - 50) {
-            direction = -1;
-        } else if (x <= 0) {
-            direction = 1;
-        }
-    }
-
-    public void draw(Graphics g) {
-        g.setColor(Color.RED);
-        g.fillRect(x, y, 50, 20);
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public boolean intersects(Bullet bullet) {
-        Rectangle spaceshipRect = new Rectangle(x, y, 50, 20);
-        Rectangle bulletRect = new Rectangle(bullet.getX(), bullet.getY(), 5, 10);
-        return spaceshipRect.intersects(bulletRect);
-    }
-}
-
-class Bullet {
-    private int x;
-    private int y;
-    private int panelWidth;
-
-    public Bullet(int x, int y, int panelWidth) {
-        this.x = x;
-        this.y = y;
-        this.panelWidth = panelWidth;
-    }
-
-    public void move() {
-        y -= 10;
-        if (y < 0) {
-            y = 500;
-        }
-    }
-
-    public void draw(Graphics g) {
-        g.setColor(Color.YELLOW);
-        g.fillRect(x, y, 5, 10);
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-}
+    public static void main(String[] args) {        String sender = "Ruslan";
+        String receiver = "Nursultan";        Main chatApp = new Main(sender, receiver);
+    }}

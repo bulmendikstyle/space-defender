@@ -16,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -45,28 +46,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sande/Downloads/lwjgl-3.2.3.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/sande/IdeaProjects/space-defender",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="ChatApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatApplication" />
+      <module name="space-defender" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="space-defender" />
@@ -84,6 +92,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ChatApplication" />
         <item itemvalue="Application.SpaceshipInterface" />
       </list>
     </recent_temporary>
@@ -105,7 +114,8 @@
       <workItem from="1682740799883" duration="3998000" />
       <workItem from="1683277588626" duration="2280000" />
       <workItem from="1683286144432" duration="883000" />
-      <workItem from="1683287098736" duration="305000" />
+      <workItem from="1683287098736" duration="5618000" />
+      <workItem from="1683295634240" duration="3454000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1682133849389</created>
@@ -156,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682741442700</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық және кемені ататын еттік,фонын күлгін түске өзгерттік,корабльды төмен түсірдік">
+      <created>1683287451918</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683287451918</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +187,7 @@
     <MESSAGE value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық" />
     <MESSAGE value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық және кемені ататын еттік" />
     <MESSAGE value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық және кемені ататын еттік,фонын күлгін түске өзгерттік" />
-    <option name="LAST_COMMIT_MESSAGE" value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық және кемені ататын еттік,фонын күлгін түске өзгерттік" />
+    <MESSAGE value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық және кемені ататын еттік,фонын күлгін түске өзгерттік,корабльды төмен түсірдік" />
+    <option name="LAST_COMMIT_MESSAGE" value="интерфейс пен ғарыш кемесі және оны х осі бойынша тоқтаусыз оңға солға қозғалттық және кемені ататын еттік,фонын күлгін түске өзгерттік,корабльды төмен түсірдік" />
   </component>
 </project>
